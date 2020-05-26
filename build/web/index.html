@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+     <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border-color: #ccc;
+            background-color: #B0E0E6;
+             margin: 0 auto;
+        }
+
+        .tg td {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 10px 5px;
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+            word-break: normal;
+            border-color: #ccc;
+            color: #333;
+            background-color: #B0E0E6;
+            margin: 0 auto;
+        }
+
+        .tg th {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 10px 5px;
+            border-style: solid;
+            border-width: 1px;
+            overflow: hidden;
+            word-break: normal;
+            border-color: #ccc;
+            color: #333;
+            background-color: #f0f0f0;
+             margin: 0 auto;
+        }
+
+        .tg .tg-4eph {
+            background-color: #f9f9f9;
+        }
+        .bodyF{
+            background-color: #FFFF00;
+            
+        }
+        
+    </style>
+    </head>
+    
+    <body >
+        <div class="bodyF">
+       <form method="get" action="StudentsTable">
+              <table class="tg">
+        <tr>
+           <td>Таблица "студенты" </td>
+           <td><input type="submit" value="Открыть"></td>
+       </table>
+       </form>
+        
+        <form method="get" action="StudentCreateServlet">
+         <table class="tg">
+        <tr>
+      
+           <td>Добавить студента</td>
+           <td><input type="submit" value="Добавить"></td>
+         </table>
+       </form> 
+        <form method="get" action="UpdateStudent">
+             <table class="tg">
+        <tr>
+      
+           <td>Изменить студента с номером зачётки:</td>
+           <td>
+               <input type="text" name="enteredValue" value="">
+           </td>
+           <td>
+               <input type="submit" value="Изменить">
+                   
+           </td>
+         </table>
+        </form>
+         <form method="get" action="DeleteStudent">
+             <table class="tg">
+        <tr>
+      
+           <td>Удалить студента с номером зачётки:</td>
+           <td>
+               <input type="text" name="deletedValue" value="">
+           </td>
+           <td>
+               <input type="submit" value="Удалить">
+                   
+           </td>
+         </table>
+        </form>
+        </div>
+    </body>
+</html>
